@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+    <script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+<body>
+    <h1><font face="DFKai-SB">常數</font></h1>
+    <pre><p><font face="DFKai-SB">玻爾茲曼常數</font><font face="Segoe Script">（Boltzmann constant）</font></p></pre>
+    $$k_{B} = 1.38064852(79)\times 10^{-23} J\cdot K^{-1}$$
+    <pre><p><font face="DFKai-SB">阿伏伽德羅常數</font><font face="Segoe Script">（Avogadro number）</font></p></pre>
+    $$N_{A} = 6.02214076\times 10^{23} mol^{-1}$$
+    <pre><p><font face="DFKai-SB">基本電荷</font><font face="Segoe Script">（Elemebtary charge）</font></p></pre>
+    $$e = 1.602176634\times 10^{-19} C$$
+    <pre><p><font face="DFKai-SB">氣體常數</font><font face="Segoe Script">（Gas constant）</font></p></pre>
+    $$R=k_{B}N_{A}=8.31446261815324 J\cdot K^{-1}\cdot mol^{-1}$$
+    <pre><p><font face="DFKai-SB">法拉第常數</font><font face="Segoe Script">（Faraday constant）</font></p></pre>
+    $$F=N_{A}e=96485.3321233100184 C\cdot mol^{-1}$$
+    <h1><font face="DFKai-SB">基礎熱力學量關係</font></h1>
+    <pre><p><font face="DFKai-SB">理想氣體狀態方程</font><font face="Segoe Script">（ideal gas equation of state）</font></p></pre>
+    $$pV=nRT$$
+    <pre><p><font face="DFKai-SB">熵</font><font face="Segoe Script">（Entropy）</font></p></pre>
+    $$\bigtriangleup S=\frac{\bigtriangleup Q}{T} =k_{B}ln\left ( \Omega \right ) $$
+</body>
+</html>
