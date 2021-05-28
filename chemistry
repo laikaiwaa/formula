@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chemistry</title>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+
+
+<h1><font face="DFKai-SB">推論</font></h1>
+
+<h2><font face="DFKai-SB">熱力學平衡</font><font face="Segoe Script">（Thermodynamics Equilibrium）</font></h2>
+<pre><p><font face="DFKai-SB">平衡狀態</font><font face="Segoe Script">（Equilibrium States）</font></p></pre>
+$$\Delta G=\Delta E-T\Delta S+\Delta \left ( PV \right )\\
+\Delta V=0\\
+\Delta U-T\Delta S=0\\
+So:\\
+\Delta G=\Delta E-T\Delta S+\Delta PV+P\Delta V\\
+=\Delta PV=\frac{NK_{B}T}{P}\Delta P\\
+G=NK_{B}TlnP+C\\
+Standard:\\
+P^{0}=1\\
+G^{0}=C\\
+G-G^{0}=NK_{B}TlnP$$
+
+<h2><font face="DFKai-SB">化學平衡</font><font face="Segoe Script">（Chemical Equilibrium）</font></h2>
+<pre><p><font face="DFKai-SB">反應量</font><font face="Segoe Script">（Chemical Formula）</font></p></pre>
+$$\sum a_{i}X_{i}\Leftrightarrow \sum b_{j}Y_{j}\\
+mol\ amount:\\
+n_{i},n_{j}\\
+molfraction:\\
+M_{i}=\frac{n_{i}}{\sum \left ( n_{i}+n_{j} \right )}\\
+N_{j}=\frac{n_{j}}{\sum \left ( n_{i}+n_{j} \right )}\\
+reaction\ quotient:\\
+Q_{r}=\frac{\prod \left ( N_{j} \right )^{b_{j}}}{\prod \left ( M_{i} \right )^{a_{i}}}\\
+when\ balance:\\
+Q_{r}\Rightarrow K_{r}$$
+
+<h2><font face="DFKai-SB">反應熱力學平衡</font><font face="Segoe Script">（Reaction Thermodynamics Equilibrium）</font></h2>
+<pre><p><font face="Segoe Script">by Thermodynamics Equilibrium）</font></p></pre>
+$$G_{a}-G_{a}^{0}=\sum G_{i}-G_{i}^{0}=NK_{B}Tln\left (\prod P_{i}  \right )\\
+G_{b}-G_{b}^{0}=\sum G_{j}-G_{j}^{0}=NK_{B}Tln\left (\prod P_{j}  \right )\\
+G_{b}-G_{b}^{0}-\left (G_{a}-G_{a}^{0}  \right )=NK_{B}Tln\left (\frac{\prod P_{j}}{\prod P_{i}}  \right )\\
+\Delta G-\Delta G^{0}=NK_{B}Tln\left (\frac{\prod P_{j}}{\prod P_{i}}  \right )$$
+<pre><p><font face="DFKai-SB">氣體分壓定律</font><font face="Segoe Script">by Law of Partial Pressure）</font></p></pre>
+$$P_{i}=M_{i}P\\
+P_{j}=N_{j}P\\
+\Delta G-\Delta G^{0}=NK_{B}Tln\left (\frac{\prod N_{j}P}{\prod M_{i}P}  \right )\\
+make\ N_{j}=N_{j1}+N_{j2}\ or\ M_{i}=M_{i1}+M_{i2}\\
+to\ \prod_{j1}P+\prod_{j2}P=\prod_{i1}P+\prod_{i2}P\\
+So:\\
+\Delta G-\Delta G^{0}=NK_{B}Tln\left (\frac{\prod_{j1}N_{j1}P\prod_{j2}N_{j2}P}{\prod_{i1} M_{i1}P\prod_{i2} M_{i2}P}  \right )\\
+=NK_{B}TlnQ_{r}\\
+When\ Balance:\\
+\Delta G=0\\
+\Delta G^{0}=-NK_{B}TlnQ_{r}=-NK_{B}TlnK_{r}\\
+\Delta G=NK_{B}TlnQ_{r}-NK_{B}TlnK_{r}=-NK_{B}Tln\left (\frac{Q_{r}}{K_{r}}  \right )$$
+</body>
+</html>
