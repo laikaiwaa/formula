@@ -2,31 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Base</title>
     <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
+
+
+
+    </script>
     <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 
 </head>
 <body>
-    <h1><font face="DFKai-SB">常數</font></h1>
-    <pre><p><font face="DFKai-SB">玻爾茲曼常數</font><font face="Segoe Script">（Boltzmann constant）</font></p></pre>
-    $$k_{B} = 1.38064852(79)\times 10^{-23} J\cdot K^{-1}$$
-    <pre><p><font face="DFKai-SB">阿伏伽德羅常數</font><font face="Segoe Script">（Avogadro number）</font></p></pre>
-    $$N_{A} = 6.02214076\times 10^{23} mol^{-1}$$
-    <pre><p><font face="DFKai-SB">基本電荷</font><font face="Segoe Script">（Elemebtary charge）</font></p></pre>
-    $$e = 1.602176634\times 10^{-19} C$$
-    <pre><p><font face="DFKai-SB">氣體常數</font><font face="Segoe Script">（Gas constant）</font></p></pre>
-    $$R=k_{B}N_{A}=8.31446261815324 J\cdot K^{-1}\cdot mol^{-1}$$
-    <pre><p><font face="DFKai-SB">法拉第常數</font><font face="Segoe Script">（Faraday constant）</font></p></pre>
-    $$F=N_{A}e=96485.3321233100184 C\cdot mol^{-1}$$
-    <h1><font face="DFKai-SB">基礎熱力學量關係</font></h1>
-    <pre><p><font face="DFKai-SB">理想氣體狀態方程</font><font face="Segoe Script">（ideal gas equation of state）</font></p></pre>
-    $$pV=nRT$$
-    <pre><p><font face="DFKai-SB">熵</font><font face="Segoe Script">（Entropy）</font></p></pre>
-    $$\bigtriangleup S=\frac{\bigtriangleup Q}{T} =k_{B}ln\left ( \Omega \right ) $$
+<h1><font face="DFKai-SB">常數</font></h1>
+<pre><p><font face="DFKai-SB">玻爾茲曼常數</font><font face="Segoe Script">（Boltzmann constant）</font></p></pre>
+$$k_{B} = 1.38064852(79)\times 10^{-23} J\cdot K^{-1}$$
+<pre><p><font face="DFKai-SB">阿伏伽德羅常數</font><font face="Segoe Script">（Avogadro number）</font></p></pre>
+$$N_{A} = 6.02214076\times 10^{23} mol^{-1}$$
+<pre><p><font face="DFKai-SB">基本電荷</font><font face="Segoe Script">（Elemebtary charge）</font></p></pre>
+$$e = 1.602176634\times 10^{-19} C$$
+<pre><p><font face="DFKai-SB">氣體常數</font><font face="Segoe Script">（Gas constant）</font></p></pre>
+$$R=k_{B}N_{A}=8.31446261815324 J\cdot K^{-1}\cdot mol^{-1}$$
+<pre><p><font face="DFKai-SB">法拉第常數</font><font face="Segoe Script">（Faraday constant）</font></p></pre>
+$$F=N_{A}e=96485.3321233100184 C\cdot mol^{-1}$$
+
+
+<h1><font face="DFKai-SB">基礎熱力學量關係</font></h1>
+<pre><p><font face="DFKai-SB">理想氣體狀態方程</font><font face="Segoe Script">（ideal gas equation of state）</font></p></pre>
+$$pV=nRT=nN_{A}k_{B}T$$
+
+
+<h1><font face="DFKai-SB">推論</font></h1>
+
+<h2><font face="DFKai-SB">麥克斯韋-玻爾茲曼分佈</font><font face="Segoe Script">（Maxwell-Boltzmann Distribution）</font></h2>
+<pre><p><font face="DFKai-SB">系統的微觀態數量</font><font
+        face="Segoe Script">（The Number of Microstates of a system）</font></p></pre>
+$$There\ n_{i}\ points\ in\ energy\ states\ \varepsilon _{i}\\
+\Omega =\frac{N!}{\prod_{i}^{s}n_{i}!}$$
+<pre><p><font face="Segoe Script">by Stirling's formula</font></p></pre>
+$$ln\left ( \Omega \right )=Nln\left ( N \right )-N-\sum n_{i}ln\left ( n_{i} \right )+\sum n_{i}\\
+=Nln\left ( N \right )-\sum n_{i}ln\left ( n_{i} \right )$$
+$$d\left [ ln\left ( \Omega \right ) \right ]=
+-\sum d\left ( n_{i} \right )ln\left ( n_{i} \right )-\sum n_{i}\frac{1}{n_{i}}d\left ( n_{i} \right )$$
+<pre><p><font face="Segoe Script">1-1 with Lagrange multiplier</font></p></pre>
+$$dE=\sum \varepsilon _{i}d\left ( n_{i} \right )=0\\ dN=\sum d\left ( n_{i} \right )=0$$
+$$d\left [ ln\left ( \Omega \right ) \right ]=
+-\sum d\left ( n_{i} \right )ln\left ( n_{i} \right )-\sum n_{i}\frac{1}{n_{i}}d\left ( n_{i} \right )$$
+$$d\left [ ln\left ( \Omega \right ) \right ]=-\sum d\left ( n_{i} \right )ln\left ( n_{i} \right )+
+\beta \sum \varepsilon _{i}d\left ( n_{i} \right )+\alpha \sum d\left ( n_{i} \right )\\=
+\sum d\left ( n_{i} \right ) \left (\beta \varepsilon _{i}+\alpha - ln\left ( n_{i} \right )\right )=0$$
+<pre><p><font face="Segoe Script">1-2 by number on each energy unchange</font></p></pre>
+$$n_{i}=e^{\alpha}e^{\beta \varepsilon _{i}}\\ N=\sum n_{i}=e^{\alpha }\sum e^{\beta \varepsilon _{i}}$$
+
+<h2><font face="DFKai-SB">速率分佈函數</font><font face="Segoe Script">（）</font></h2>
+<pre><p><font face="Segoe Script">1-3 Speed Distribution</font></p></pre>
+$$n_{i}=e^{\alpha}e^{\beta \varepsilon _{i}}\\
+f\left (\overrightarrow{v} \right )=\frac{n_{i}}{N}=Ae^{\beta \frac{m\overrightarrow{v_{i}}^{2}}{2}}\\
+\int_{-\infty}^{+\infty }f\left (\overrightarrow{v} \right )d\left ( \overrightarrow{v} \right )
+=\int_{-\infty}^{+\infty }Ae^{\beta \frac{m\overrightarrow{v}^{2}}{2}}d\left ( \overrightarrow{v} \right )\\
+=\int_{-\infty}^{+\infty }\int_{-\infty}^{+\infty }\int_{-\infty}^{+\infty }Ae^{\beta
+\frac{m\left (\overrightarrow{v_{x}}^{2} +\overrightarrow{v_{y}}^{2}+\overrightarrow{v_{z}}^{2} \right )}{2}}d
+\left ( \overrightarrow{v_{x}} \right )d\left ( \overrightarrow{v_{y}} \right )d\left ( \overrightarrow{v_{z}} \right
+)\\
+=A\int_{-\infty}^{+\infty }e^{\beta \frac{m\overrightarrow{v_{x}}^{2}}{2}}d\left ( \overrightarrow{v_{x}} \right )
+\int_{-\infty}^{+\infty }e^{\beta \frac{m\overrightarrow{v_{y}}^{2}}{2}}d\left ( \overrightarrow{v_{y}} \right )
+\int_{-\infty}^{+\infty }e^{\beta \frac{m\overrightarrow{v_{z}}^{2}}{2}}d\left ( \overrightarrow{v_{z}} \right )$$
+<pre><p><font face="Segoe Script">1-4 By Gauss Integral and normalization</font></p></pre>
+$$A\sqrt{ \frac{2\pi}{-\beta m}}^{3}=1\\ A=\sqrt{\frac{-\beta m}{2\pi}}^{3}$$
+<pre><p><font face="Segoe Script">1-5 Since Average energy</font></p></pre>
+$$\overline{E}=\int_{-\infty}^{+\infty }\frac{m\overrightarrow{v}^{2}}{2}f\left (\overrightarrow{v} \right )d\left (
+\overrightarrow{v} \right )\\
+=\int_{-\infty}^{+\infty }\frac{m\overrightarrow{v}^{2}}{2}Ae^{\beta \frac{m\overrightarrow{v}^{2}}{2}}d\left (
+\overrightarrow{v} \right )
+=\int_{-\infty}^{+\infty }\frac{m\overrightarrow{v}^{2}}{2}Ae^{\beta \frac{m\overrightarrow{v}^{2}}{2}}d\left (
+\overrightarrow{v} \right )\\
+=\int_{-\infty}^{+\infty }\int_{-\infty}^{+\infty }\int_{-\infty}^{+\infty }\frac{m\left (\overrightarrow{v_{x}}^{2}
++\overrightarrow{v_{y}}^{2}+\overrightarrow{v_{z}}^{2} \right )}{2}Ae^{\beta \frac{m\left (\overrightarrow{v_{x}}^{2}
++\overrightarrow{v_{y}}^{2}+\overrightarrow{v_{z}}^{2} \right )}{2}}d\left ( \overrightarrow{v_{x}} \right )
+d\left ( \overrightarrow{v_{y}} \right )d\left ( \overrightarrow{v_{z}} \right )\\
+=\sum_{d}^{3}\int_{-\infty}^{+\infty }\int_{-\infty}^{+\infty }\int_{-\infty}^{+\infty }\frac{m
+\overrightarrow{v_{d}}^{2}}{2}Ae^{\beta \frac{m\overrightarrow{v_{x}}^{2}}{2}}e^{\beta \frac{m
+\overrightarrow{v_{y}}^{2}}{2}}e^{\beta \frac{m\overrightarrow{v_{z}}^{2}}{2}}d\left ( \overrightarrow{v_{x}} \right )
+d\left ( \overrightarrow{v_{y}} \right )d\left ( \overrightarrow{v_{z}} \right )$$
+$$=\frac{m}{2}\sqrt{\frac{-\beta m }{2\pi}}^{3}3\int_{-\infty}^{+\infty }\int_{-\infty}^{+\infty }
+\int_{-\infty}^{+\infty }\sqrt{\frac{2\pi}{-\beta m}}\frac{1}{-\beta m}e^{\beta
+\frac{m\overrightarrow{v_{y}}^{2}}{2}}e^{\beta
+\frac{m\overrightarrow{v_{z}}^{2}}{2}}d\left ( \overrightarrow{v_{x}} \right )d\left ( \overrightarrow{v_{y}} \right )
+d\left ( \overrightarrow{v_{z}} \right )\\
+=\frac{m}{2}\sqrt{\frac{-\beta m }{2\pi}}^{3}3\sqrt{\frac{2\pi}{-\beta m}}\frac{1}{-\beta m}
+\sqrt{\frac{2\pi}{-\beta m}}\sqrt{\frac{2\pi}{-\beta m}}\\
+=\frac{3}{-2\beta }$$
+<pre><p><font face="Segoe Script">1-6 In Other Way</font></p></pre>
+$$\Delta p_{x}=2mv_{x}\\
+\Delta t=\frac{2L}{v_{x}}\\
+P=\frac{F}{L^{2}}=\frac{\Delta P}{\Delta tL^{2}}=\frac{mv_{x}}{V}\\
+=\frac{Nm\overline{v}_{x}^{2}}{V}=\frac{Nm\overline{v}^{2}}{3V}\\
+PV=\frac{Nm\overline{v}^{2}}{3}=nN_{A}k_{B}T=Nk_{B}T\\
+\overline{E}=\frac{m\overline{v}^{2}}{2}=\frac{3}{2}k_{B}T$$
+$$So:\\\beta =\frac{-1}{k_{B}T}\\
+\alpha =ln\left ( N\left (\frac{m}{2\pi k_{B}T} \right )^{\frac{3}{2}} \right )\\
+f\left (\overrightarrow{v} \right )=\left (\frac{m}{2\pi k_{B}T} \right )^{\frac{3}{2}}e^{-\frac{\varepsilon
+_{i}}{k_{B}T}}\\
+n_{i}=e^{\alpha }e^{-\frac{\varepsilon _{i}}{k_{B}T}}\\
+N=e^{\alpha }\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}}$$
+<pre><p><font face="Segoe Script">1-7 Speed Function</font></p></pre>
+$$1=\int f\left (\overrightarrow{v} \right )d\overrightarrow{v}=
+\int \int \int f\left (v_{x},v_{y},v_{z} \right )d\left ( v_{x} \right )d\left ( v_{y} \right )d\left ( v_{z} \right )\\
+=\int \int_{0}^{2\pi } \int_{0 }^{\pi} f\left (v,\theta , \varphi \right )v^{2}sin\theta dvd\theta d\varphi\\
+=\int f\left (v,\theta , \varphi \right )4\pi v^{2}dv=\int f\left (v \right )dv\\
+So:\\
+f\left (v \right )=4\pi v^{2}f\left (v,\theta , \varphi \right )=4\pi v^{2}f\left (\overrightarrow{v} \right )\\
+f\left (v \right )=4\pi v^{2}\left (\frac{m}{2\pi k_{B}T} \right )^{\frac{3}{2}}e^{-\frac{\varepsilon _{i}}{k_{B}T}}$$
+
+<h2><font face="DFKai-SB">玻尔兹曼熵</font><font face="Segoe Script">（Boltzmann entropy）</font></h2>
+<pre><p><font face="Segoe Script">2-1 By Defination</font></p></pre>
+$$S=k_{B}ln\left ( \Omega \right )\\
+=k_{B}\left ( NlnN-\sum n_{i}ln\left ( n_{i} \right ) \right )\\
+=k_{B}\left [ NlnN-\sum \left (\frac{N}{\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} }e^{-\frac{\varepsilon
+_{i}}{k_{B}T}}ln\left ( \frac{N}{\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} }e^{-\frac{\varepsilon _{i}}{k_{B}T}} \right
+) \right ) \right ] \\
+=k_{B}\left [ NlnN-\frac{N}{\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} }\sum \left
+( e^{-\frac{\varepsilon _{i}}{k_{B}T}}ln\left ( N \right )-e^{-\frac{\varepsilon _{i}}{k_{B}T}}ln\left ({\sum
+e^{-\frac{\varepsilon _{i}}{k_{B}T}} } \right )-e^{-\frac{\varepsilon _{i}}{k_{B}T}}{\frac{\varepsilon
+_{i}}{k_{B}T}}\right ) \right ] \\
+=k_{B}\left [ NlnN-\frac{N}{\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} }
+\left
+( ln\left ( N \right )\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}}
+-ln\left ({\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} } \right ) \sum e^{-\frac{\varepsilon _{i}}{k_{B}T}}
+-\sum \left (e^{-\frac{\varepsilon _{i}}{k_{B}T}}{\frac{\varepsilon _{i}}{k_{B}T}} \right )\right ) \right ]$$
+$$=k_{B}\left [ NlnN-
+\left (
+NlnN
+-Nln\left ({\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} } \right )
+-\sum \left (n_{i}{\frac{\varepsilon _{i}}{k_{B}T}} \right )\right ) \right ] \\
+=k_{B}\left (Nln\left ({\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} } \right )
++{\frac{\sum n_{i}\varepsilon _{i}}{k_{B}T}} \right )\\
+=k_{B}Nln\left ({\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} } \right ) +{\frac{E}{T}}$$
+
+<h2><font face="DFKai-SB">霍尔兹曼自由能、吉布斯自由能、焓</font><font face="Segoe Script">（Helmholtz free energy、Gibbs Free
+    Energy、Enthalpy）</font></h2>
+<pre><p><font face="Segoe Script">By Defination</font></p></pre>
+$$F=E-TS\\
+=E-T\left (k_{B}Nln\left ({\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} }  \right )  +{\frac{E}{T}}  \right )\\
+=-Tk_{B}Nln\left ({\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} }   \right )\\
+G=F+PV\\
+=NTk_{B}-Tk_{B}Nln\left ({\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} }   \right )\\
+=NTk_{B}\left [1-ln\left ({\sum e^{-\frac{\varepsilon _{i}}{k_{B}T}} }   \right )  \right ]\\
+H=E+PV\\
+=E+NTk_{B}
+$$
+<h2><font face="DFKai-SB">費米-狄拉克統計</font><font face="Segoe Script">（Fermi-Dirac Statistics）</font></h2>
+<pre><p><font face="Segoe Script">The Number of States</font></p></pre>
+$$There\ n_{i}\ points\ and\ g_{i}\ subenergy\ level\ in\ energy\ states\ \varepsilon _{i}\\
+by\ Pauli\ exclusion\ principle\\
+\Omega =\prod_{i}^{s}\frac{g_{i}!}{n_{i}!\left (g_{i}-n_{i}  \right )!}$$
+<pre><p><font face="Segoe Script">by Same Method</font></p></pre>
+$$n_{i}=\frac{g_{i}}{e^{\alpha }e^{\frac{\varepsilon _{i}}{k_{B}T}}+1} $$
+
+<h2><font face="DFKai-SB">玻色-愛恩斯坦統計</font><font face="Segoe Script">（Bose-Einstein Statistics）</font></h2>
+<pre><p><font face="Segoe Script">The Number of States</font></p></pre>
+$$There\ n_{i}\ points\ and\ g_{i}\ subenergy\ level\ in\ energy\ states\ \varepsilon _{i}\\
+\Omega =\prod_{i}^{s}\frac{\left (n_{i}+g_{i}-1  \right )!}{n_{i}!\left (g_{i}-1  \right )!}\approx
+\prod_{i}^{s}\frac{\left (n_{i}+g_{i} \right )!}{n_{i}! g_{i}!}$$
 </body>
 </html>
