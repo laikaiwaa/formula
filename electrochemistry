@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electrochemistry</title>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+    <h1><font face="DFKai-SB">推論</font></h1>
+
+    <h2><font face="DFKai-SB">基礎關係</font><font face="Segoe Script">（Base Relation）</font></h2>
+    <pre><p><font face="DFKai-SB">電功</font><font face="Segoe Script">（Equilibrium States）</font></p></pre>
+    $$\Delta G=-nFE$$
+    <pre><p><font face="DFKai-SB">反應速率</font><font face="Segoe Script">（Chemical Reation Rate）</font></p></pre>
+    $$v=\frac{i}{nF}$$
+
+    <h2><font face="DFKai-SB">反應動力學</font><font face="Segoe Script">（Relation Kinetics）</font></h2>
+    <pre><p><font face="Segoe Script">Nernst equation</font></p></pre>
+    $$\Delta G-\Delta G^{0}=NK_{B}TlnQ_{r}\\
+    -nF\left (E-E^{0}  \right )=NK_{B}TlnQ_{r}\\
+    E-E^{0}=-\frac{RT}{F}lnQ_{r}$$
+    <pre><p><font face="Segoe Script">Arrhenius equation</font></p></pre>
+    $$v=Ae^{-\frac{G}{RT}}$$
+    <pre><p><font face="Segoe Script">Bulter-volmer equation</font></p></pre>
+    $$i_{a}=n_{a}FAe^{-\frac{\Delta G_{a}}{RT}}\\
+    i_{b}=n_{b}FAe^{-\frac{\Delta G_{b}}{RT}}\\
+    I=i_{a}-i_{b}\\
+    =FA\left (n_{a}e^{-\frac{\Delta G_{a}}{RT}}-n_{b}e^{-\frac{\Delta G_{b}}{RT}}  \right )\\
+    =FA\left (n_{a}e^{-\frac{-n_{a}FE}{RT}}-n_{b}e^{-\frac{-n_{b}F E}{RT}}  \right )\\
+    When\ Balance:\\
+    I^{0}=i_{a}^{0}-i_{b}^{0}=0\\
+    i^{0}=i_{a}^{0}=i_{b}^{0}\\
+    So:\\
+    i^{0}=n_{a}^{0}FAe^{-\frac{-n_{a}F E^{0}}{RT}}=n_{b}^{0}FAe^{-\frac{-n_{b}F E^{0}}{RT}}\\
+    I=i^{0}\left ( \frac{n_{a}}{n_{a}^{0}}e^{-\frac{-n_{a}F\left ( E-E^{0}  \right )}{RT}}-
+    \frac{n_{b}}{n_{b}^{0}}e^{-\frac{-n_{b}F\left ( E-E^{0}  \right )}{RT}} \right )$$
+</body>
+</html>
