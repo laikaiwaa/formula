@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Semiconductors</title>
     <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
     </script>
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 </head>
 <body>
-    <h1><font face="DFKai-SB">基础概念</font></h1>
+<h1><font face="DFKai-SB">基础概念</font></h1>
 
-    <h2><font face="DFKai-SB">電勢差分佈</font><font face="Segoe Script">（potential different）</font></h2>
-    <pre><p><font face="Segoe Script">PN-junction</font></p></pre>
-    $$numberof\ electron\ for\ negative\ carries\ is\ N_{n}\\
+<h2><font face="DFKai-SB">電勢差分佈</font><font face="Segoe Script">（potential different）</font></h2>
+<pre><p><font face="Segoe Script">PN-junction</font></p></pre>
+$$numberof\ electron\ for\ negative\ carries\ is\ N_{n}\\
 numberof\ holes\ for\ postive\ carries\ is\ N_{p}\\
 P-type\ material\ with\ N_{p}>N_{n}\\
 N-type\ material\ with\ N_{n}>N_{p}\\
@@ -30,7 +31,14 @@ $$\frac{N_{i}}{N}=Ae^{-\frac{\varepsilon i}{k_{B}T}}\\
 <pre><p><font face="Segoe Script">current</font></p></pre>
 $$I_{0}\propto N_{n}\left ( n-side \right )=N_{n}\left ( p-side \right )e^{-\frac{q_{n}V}{k_{B}T}}$$
 <pre><p><font face="Segoe Script">external potential </font></p></pre>
-    $$I_{1}\propto =N_{n}\left ( p-side \right )e^{-\frac{q_{n}\left (V-\Delta V  \right )}{k_{B}T}} \\
-     I_{1}=I_{0}e^{\frac{+q\left (\Delta V  \right )}{k_{B}T}}$$
+$$I_{1}\propto =N_{n}\left ( p-side \right )e^{-\frac{q_{n}\left (V-\Delta V \right )}{k_{B}T}} \\
+I_{1}=I_{0}e^{\frac{+q\left (\Delta V \right )}{k_{B}T}}$$
+<pre><p><font face="Segoe Script">the Transistor</font></p></pre>
+in PNP, The n-type region is made very thin—typically 10−3 cm or less,
+much narrower than its transverse dimensions. This means that as the holes enter the n-type region they have a very good
+chance of diffusing across to the other junction before they are annihilated by the electrons in the n-type region. When
+they get to the right-hand boundary of the n-type region they find a steep downward potential hill and immediately fall
+into the right-hand p-type region. This side of the crystal is called the collector because it “collects” the holes
+after they have diffused across the n-type region
 </body>
 </html>
