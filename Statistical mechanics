@@ -165,5 +165,7 @@ $$n_{i}=\frac{g_{i}}{e^{\alpha }e^{\frac{\varepsilon _{i}}{k_{B}T}}+1} $$
 $$There\ n_{i}\ points\ and\ g_{i}\ subenergy\ level\ in\ energy\ states\ \varepsilon _{i}\\
 \Omega =\prod_{i}^{s}\frac{\left (n_{i}+g_{i}-1  \right )!}{n_{i}!\left (g_{i}-1  \right )!}\approx
 \prod_{i}^{s}\frac{\left (n_{i}+g_{i} \right )!}{n_{i}! g_{i}!}$$
+<pre><p><font face="Segoe Script">by Same Method</font></p></pre>
+$$n_{i}=\frac{g_{i}}{e^{\alpha }e^{\frac{\varepsilon _{i}}{k_{B}T}}-1} $$
 </body>
 </html>
