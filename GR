@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electrochemistry</title>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+<h1><font face="Segoe Script">1 Retarded Potential</font></h1>
+
+<h2><font face="Segoe Script">1.1 Setting</font></h2>
+The electron move from $q\left (\overrightarrow{r_{2}},t_{2} \right )$ to
+$q\left (\overrightarrow{r_{1}},t_{1} \right )$ by $\overrightarrow{v}$
+The Potential at $\left (\overrightarrow{r}(t),t_{1} \right )$ view at $r_{0}$ is:
+$$\phi \left (\overrightarrow{r}(t),t_{1} \right )=\frac{1}{4\pi \varepsilon _{0}}\int \frac{\rho \left (
+\overrightarrow{r}(t),t_{1} \right )}{\left |\overrightarrow{r_{0}}-\overrightarrow{r}\left ( t_{2} \right ) \right
+|}d\overrightarrow{r}$$
+and:
+$$
+\overrightarrow{j} \left (\overrightarrow{r},t_{1} \right )=
+q\overrightarrow{v}\left ( t \right )\delta ^{3}\left ( \overrightarrow{r}-\overrightarrow{r}\left ( t_{2} \right )
+\right )\\
+\overrightarrow{\rho } \left (\overrightarrow{r},t_{1} \right )=
+q\delta ^{3}\left ( \overrightarrow{r}-\overrightarrow{r}\left ( t_{2} \right ) \right )\\
+\overrightarrow{A} \left (\overrightarrow{r},t_{1} \right )=
+\frac{\mu _{0}}{4\pi }\int \frac{\overrightarrow{j} \left (\overrightarrow{r},t_{1} \right )}{\left |\left (
+\overrightarrow{r}-\overrightarrow{r}\left ( t_{2} \right ) \right ) \right |}d\overrightarrow{r}
+$$
+
+<h2><font face="Segoe Script">1.2 Lienard-Wiechert Potential</font></h2>
+$$\phi \left (\overrightarrow{r}(t),t_{1} \right )=\frac{q}{4\pi \varepsilon _{0}}\int \frac{\delta ^{3}\rho \left (
+\overrightarrow{r}(t),t_{1} \right )}{\left |\overrightarrow{r_{0}}-\overrightarrow{r}\left ( t_{2} \right ) \right
+|}d\overrightarrow{r}$$
+by:
+$$t_{2}=t_{1}-\frac{\left | \overrightarrow{r_{0}}-\overrightarrow{r}\left ( t_{2} \right ) \right |}{c}\\
+t_{2}\rightarrow \tau \\
+\delta \left ( f\left ( \tau \right ) \right )=\left | \frac{\delta \left ( \tau -\tau _{0} \right )}{
+f^{'}\left ( \tau \right )_{\tau =\tau _{0}}} \right |$$
+then:
+$$\int \delta ^{3}\left ( \overrightarrow{r}-\overrightarrow{r}\left ( t_{2} \right ) \right )d\overrightarrow{r}=
+\iint \delta ^{3}\left ( \overrightarrow{r}-\overrightarrow{r}\left ( \tau \right ) \right )d\overrightarrow{r}\delta
+\left ( \tau -t_{2} \right )d\tau \\
+=\int \delta \left ( \tau -t_{2} \right )d\tau=\int \frac{\delta \left ( \tau -t_{2} \right )}{\frac{\partial }{\partial
+\tau }\left ( \tau -t_{1}+\frac{\left |\overrightarrow{r_{0}}-\overrightarrow{r}\left (\tau \right ) \right |}{c} \right
+)_{\tau=t_{2}}}d\tau\\
+=\int \frac{\delta \left ( \tau -t_{2} \right )}{\left ( 1+\frac{\partial
+}{\partial \tau }\frac{\left |\overrightarrow{r_{0}}-\overrightarrow{r}\left (\tau \right ) \right |}{c} \right
+)_{\tau=t_{2}}}d\tau$$
+by:
+$$\overrightarrow{r}=r_{i}\left ( t \right )\overrightarrow{r_{i}}\\
+\frac{\partial \left | \overrightarrow{r} \right |}{\partial t}=
+\frac{\partial \left | \sqrt{r_{i}\left ( t \right )^{2}} \right |}{\partial t}=\\
+\frac{r_{i}\left ( t \right )\cdot \frac{\partial r_{i}\left ( t \right )}{\partial t}}{\left | \overrightarrow{r}
+\right |}=\frac{\overrightarrow{r}\cdot \overrightarrow{v}}{\left | \overrightarrow{r} \right |}$$
+so:
+$$\int \frac{\delta \left ( \tau -t_{2} \right )}{\left ( 1+\frac{\partial
+}{\partial \tau }\frac{\left |\overrightarrow{r_{0}}-\overrightarrow{r}\left (\tau \right ) \right |}{c} \right
+)_{\tau=t_{2}}}d\tau=\int \frac{\delta \left ( \tau -t_{2} \right )}{\left ( 1-\frac{\left
+(\overrightarrow{r_{0}}-\overrightarrow{r}\left (t_{2} \right ) \right )\cdot \overrightarrow{v}}{c\left
+|\overrightarrow{r_{0}}-\overrightarrow{r}\left (t_{2} \right ) \right |} \right
+)}d\tau= \frac{1}{\left ( 1-\frac{\left (\overrightarrow{r_{0}}-\overrightarrow{r}\left (t_{2} \right ) \right )\cdot
+\overrightarrow{v}}{c\left |\overrightarrow{r_{0}}-\overrightarrow{r}\left (t_{2} \right ) \right |} \right
+)}\\
+\phi \left ( \overrightarrow{r}\left ( t \right ),t \right )=\frac{q}{4\pi \varepsilon _{0}}\frac{1}{\left ( \left
+|\overrightarrow{r_{0}}-\overrightarrow{r}\left (t_{2} \right ) \right |-\frac{\left
+(\overrightarrow{r_{0}}-\overrightarrow{r}\left (t_{2} \right ) \right )\cdot \overrightarrow{v}}{c} \right
+)}\\
+\overrightarrow{A}\left ( \overrightarrow{r}\left ( t \right ),t \right )=\phi \left ( \overrightarrow{r}\left ( t
+\right ),t \right
+)\cdot \frac{\overrightarrow{v}}{\mu _{_{0}}\varepsilon _{0}}=\phi \cdot \frac{\overrightarrow{v}}{c^{2}}$$
+
+<h1><font face="Segoe Script">2 to Lorentz formula</font></h1>
+
+<h2><font face="Segoe Script">2.1 When electron move along x</font></h2>
+$$\rho \left ( \overrightarrow{r}\left ( t \right ),t \right )=\frac{q}{4\pi \varepsilon _{0}}\frac{1}{\left ( \left
+|\overrightarrow{r_{0}}-\overrightarrow{r}\left (t_{2} \right ) \right |-\frac{\left
+(\overrightarrow{r_{0}}-\overrightarrow{r}\left (t_{2} \right ) \right )\cdot \overrightarrow{v}}{c} \right
+)}=\frac{q}{4\pi \varepsilon _{0}}\frac{1}{\left ( c\left ( t_{1}-t_{2} \right )-\frac{\left
+(\overrightarrow{x}-\overrightarrow{v}\cdot t_{2} \right )\cdot \overrightarrow{v}}{c} \right
+)}$$
+by:
+$$c\left ( t_{1}-t_{2} \right )=\sqrt{\left ( \overrightarrow{x}-\overrightarrow{v}\cdot t_{1} \right
+)^{2}+y^{2}+z^{2}}\\
+\left ( 1-\frac{v^{2}}{c^{2}} \right )t_{2}=t_{1}-\frac{\overrightarrow{v}\cdot \overrightarrow{x}}{c^{2}}\pm
+\frac{1}{c}\sqrt{\left ( \overrightarrow{x}-\overrightarrow{v}t_{1} \right )^{2}+\frac{\left ( c^{2}-v^{2} \right
+)}{c^{2}}\left ( y^{2}+z^{2} \right )}\\
+c\left ( t_{1}-t_{2} \right )-\frac{\overrightarrow{v}}{c}\left ( \overrightarrow{x}-\overrightarrow{v}t_{2} \right )=
+c t_{1}-ct_{2} -\frac{\overrightarrow{v}}{c}\overrightarrow{x}+\frac{\overrightarrow{v}}{c}\overrightarrow{v}t_{2} =\\
+\left (\frac{\overrightarrow{v}}{c}\overrightarrow{v}-c \right )t_{2} +c
+t_{1}-\frac{\overrightarrow{v}}{c}\overrightarrow{x}=\pm \sqrt{\left (
+\overrightarrow{x}-\overrightarrow{v}t_{1} \right )^{2}+\frac{\left ( c^{2}-v^{2} \right )}{c^{2}}\left ( y^{2}+z^{2}
+\right )}$$
+then:
+$$\rho \left ( \overrightarrow{r}\left ( t \right ),t \right )=\frac{q}{4\pi \varepsilon _{0}}\frac{1}{\sqrt{\left (
+\overrightarrow{x}-\overrightarrow{v}t \right )^{2}+\frac{\left ( c^{2}-v^{2} \right )}{c^{2}}\left ( y^{2}+z^{2}
+\right )}}=\\
+\frac{q}{4\pi \varepsilon _{0}}\gamma \frac{1}{\sqrt{\left (\gamma\left (x-vt \right )\right )^{2}+\left ( y^{2}+z^{2}
+\right )}}$$
+transforma by :
+$$x^{'}=\frac{x-vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}},y^{'}=y,z^{'}=z,y^{'}=y,\phi =\gamma \phi ^{'}\\
+\frac{x^{'}}{t^{'}}=\frac{x}{t}=c\Rightarrow \gamma \frac{\left ( x-vt \right )}{t^{'}}=\frac{x}{t}\\
+\Rightarrow t^{'}=\gamma \left ( t-\frac{vtt}{xx}x \right )=\gamma \left ( t-\frac{v}{c^{2}}x \right )\\
+in\ opposite\ term (v\rightarrow -v):\\
+x=\gamma \left ( x+vt \right ),t=\gamma \left ( t+ \frac{v}{c^{2}}x\right )$$
+
+<h1><font face="Segoe Script">3 EM tensor transform</font></h1>
+
+<h2><font face="Segoe Script">3.1 Setting</font></h2>
+$$\overrightarrow{E}=-\bigtriangledown \phi -\frac{\partial \overrightarrow{A}}{\partial t}\\
+\overrightarrow{B}=\bigtriangledown \times \overrightarrow{A}\\
+F_{\mu \nu }=\bigtriangledown _{\mu }A_{\nu }-\bigtriangledown _{\nu }A_{\mu }$$
+<h2><font face="Segoe Script">3.2 Tensor Transform</font></h2>
+in coodinate:
+$$\overrightarrow{R}\left ( x,y,z,ict \right )
+,\overrightarrow{R}=x\overrightarrow{x}+y\overrightarrow{y}+z\overrightarrow{z}+ict\overrightarrow{ict}$$
+by transform:
+$$x^{'}_{i}=\frac{\partial x^{'}_{i}}{\partial x_{j}}x^{'}_{j},\frac{\partial \overrightarrow{R}}{\partial
+x^{'}_{i} }=\frac{\partial \overrightarrow{R}}{\partial x_{j}}\frac{\partial x_{j}}{\partial x^{'}_{i}}\\
+d\overrightarrow{R}=\frac{\partial \overrightarrow{R}}{\partial x_{j}^{'}}d x_{j}^{'}=\frac{\partial
+\overrightarrow{R}}{\partial x_{i}}d x_{i}\\
+d\overrightarrow{R}\left ( t \right )=\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial
+t}dt=\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial
+x_{i}}\frac{\partial x_{i} }{\partial t}dt\\=\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial
+x_{j}^{'}}\frac{\partial x_{j}^{'}}{\partial x_{i}}\frac{\partial x_{i} }{\partial t}dt=
+\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{j}^{'}}d x_{j}^{'}\\
+=\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{j}^{'}}\frac{\partial x_{j}^{'}}{\partial t^{'}}d
+t^{'}=\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial t^{'}}d t^{'}$$
+then:
+$$\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{i}}\frac{\partial x_{i} }{\partial t}dt=
+\frac{\partial \overrightarrow{R}\left ( t^{'} \right ) }{\partial x^{'}_{j}}\frac{\partial x^{'}_{j} }{\partial
+t^{'}}dt^{'} \\ \Rightarrow \frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{i}}\frac{\partial x_{i}
+}{\partial t}dt=
+\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{k}}\frac{\partial x_{k}}{\partial
+x^{'}_{j}}\frac{\partial x^{'}_{j} }{\partial t^{'}}dt^{'}
+\Rightarrow \overrightarrow{v_{i}}dt=\frac{\partial x_{i}}{\partial x^{'}_{j}}\overrightarrow{v^{'}_{j}}dt^{'}\\
+\overrightarrow{v_{i}}dt=\frac{\partial x_{i}}{\partial x^{'}_{j}}\overrightarrow{v^{'}_{j}}dt^{'}$$
+by
+$$\overrightarrow{A_{i}}=\frac{\phi }{c^{2}}\overrightarrow{v_{i}},\overrightarrow{A_{t}}=\frac{\phi }{c^{2}}ic,\phi
+=\gamma \phi ^{'}\\
+\overrightarrow{A_{i}}dt=\frac{\gamma \phi ^{'} }{c^{2}}\frac{\partial x_{i}}{\partial
+x^{'}_{j}}\overrightarrow{v^{'}_{j}}dt^{'} =\gamma \frac{\partial x_{i}}{\partial
+x^{'}_{j}}\overrightarrow{A^{'}_{j}}dt^{'}$$
+so:
+$$\overrightarrow{A^{'}_{j}}=\frac{dt}{\gamma dt^{'}}\overrightarrow{A_{i}}\frac{\partial x^{'}_{j}}{\partial x_{i}}\\
+\overrightarrow{A^{'}_{x}}=\frac{dt}{\gamma dt^{'}}\left (\overrightarrow{A_{x}}\frac{\partial x^{'}}{\partial
+x}+\overrightarrow{A_{t}}\frac{\partial x^{'}}{\partial ict} \right )=\frac{dt}{dt^{'}}\left
+(\overrightarrow{A_{x}}-\frac{v}{ic} \overrightarrow{A_{t}} \right )\\
+\overrightarrow{A^{'}_{t}}=\frac{dt}{\gamma dt^{'}}\left (\overrightarrow{A_{x}}\frac{\partial ict^{'}}{\partial
+x}+\overrightarrow{A_{t}}\frac{\partial ict^{'}}{\partial ict} \right )=\frac{dt}{dt^{'}}\left
+(-i\frac{v}{c}\overrightarrow{A_{x}}+ \overrightarrow{A_{t}} \right )$$
+<h2><font face="Segoe Script">3.3 EM Tensor transform</font></h2>
+replace:
+$$A_{x}\Rightarrow -A_{x},A_{y}\Rightarrow -A_{y},A_{z}\Rightarrow -A_{z}$$
+then:
+$$E_{x}=ic\left ( \frac{\partial A_{x}}{ic\partial t}-\frac{\partial A_{t}}{\partial x} \right ),
+B_{x}=\left ( \frac{\partial A_{y}}{\partial z}-\frac{\partial A_{z}}{\partial y} \right )\\
+E_{y}=ic\left ( \frac{\partial A_{y}}{ic\partial t}-\frac{\partial A_{t}}{\partial y} \right ),
+B_{y}=\left ( \frac{\partial A_{z}}{\partial x}-\frac{\partial A_{x}}{\partial z} \right )\\
+E_{z}=ic\left ( \frac{\partial A_{z}}{ic\partial t}-\frac{\partial A_{t}}{\partial z} \right ),
+B_{z}=\left ( \frac{\partial A_{x}}{\partial y}-\frac{\partial A_{y}}{\partial x} \right )$$
+Orthogonal Matrics:
+$$e_{i}\otimes e_{j}=\frac{\partial \overrightarrow{R}}{\partial x_{k}^{'}}\frac{\partial x_{k}^{'}}{\partial
+x_{i}}\otimes
+\frac{\partial \overrightarrow{R}}{\partial x_{l}^{'}}\frac{\partial x_{l}^{'}}{\partial x_{j}}=M_{ik}\left (
+e_{k}^{'}\otimes e_{l}^{'}\right )M_{lj}$$
+so:
+$$M_{ik}M_{lj}=I\Rightarrow M_{ik}\left (M_{ik} \right )^{T}=I$$
+set:
+$$A_{\mu \nu }=\frac{\partial x_{\mu }^{'}}{\partial x_{\nu }},B_{ij }=\frac{\partial x_{i}}{\partial x_{j }^{'}},
+AB=\sum_{v}\frac{\partial x_{\mu }^{'}}{\partial x_{\nu }}\frac{\partial x_{\nu }}{\partial x_{j }^{'}}=\sigma _{\mu
+j}\\
+C=A^{T},D=B^{T},C_{\nu \mu }=\frac{\partial x_{\nu }^{'}}{\partial x_{\mu }},D_{ji }=\frac{\partial x_{j}}{\partial x_{i
+}^{'}}\\
+AC=\sum_{\nu }\frac{\partial x_{\mu }^{'}}{\partial x_{\nu }}\frac{\partial x_{\nu }^{'}}{\partial x_{\mu }}=\sigma
+_{\mu \mu};BD=\sum_{j}\frac{\partial x_{i }}{\partial x_{j }^{'}}\frac{\partial x_{j }}{\partial x_{i }^{'}}=\sigma
+_{ii}$$
+so:
+$$B=A^{T};A=B^{T}$$
+then:
+$$F_{\mu \nu }^{'}=A_{\mu }^{'}\otimes \frac{\partial }{\partial x_{\nu }^{'}}- \frac{\partial }{\partial x_{\nu
+}^{'}}\otimes A_{\mu }^{'}\\
+=\frac{dt}{\gamma dt^{'}}\left [ \frac{\partial x_{\mu }^{'}}{\partial x_{k}}A_{k}\otimes \frac{\partial }{\partial x_{l
+}}\frac{\partial x_{l }}{\partial x_{\nu }^{'}}- \frac{\partial x_{k}}{\partial x_{\mu }^{'}}\frac{\partial }{\partial
+x_{k}}\otimes A_{l}\frac{\partial x_{\nu}^{'}}{\partial x_{l}}\right ]\\
+=\frac{dt}{\gamma dt^{'}}\frac{\partial x_{\mu }^{'}}{\partial x_{k}}\left ( A_{k}\otimes \frac{\partial }{\partial x_{l
+}}- \frac{\partial }{\partial x_{k}}\otimes A_{l}\right )\frac{\partial x_{l }}{\partial x_{\nu }^{'}}$$
+when:
+$$v_{x}=v(viewer\ in\ moving\ point\)$$
+then:
+$$\frac{dt}{\gamma dt^{'}}=1$$
+<h1><font face="Segoe Script">4 Acceralation</font></h1>
+
+<h2><font face="Segoe Script">4.1 Velocity transform</font></h2>
+$$\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial t^{'}}dt^{'}=\frac{\partial \overrightarrow{R}\left ( t
+\right ) }{\partial x_{j}^{'}\left ( t^{'} \right )}\frac{\partial x_{j}^{'}\left ( t^{'} \right )}{\partial
+t^{'}}dt^{'}=\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{i}\left ( t \right )}\frac{\partial
+x_{i}\left ( t \right ) }{\partial x_{j}^{'}\left ( t^{'} \right )}v_{j}^{'}dt^{'}\\
+=\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial t}dt=\frac{\partial \overrightarrow{R}\left ( t \right )
+}{\partial x_{i}\left ( t \right )}\frac{\partial x_{i}\left ( t \right )}{\partial t}dt=\frac{\partial
+\overrightarrow{R}\left ( t \right ) }{\partial x_{i}\left ( t \right )}v_{i}dt\\
+\Rightarrow \frac{\partial x_{i}\left ( t \right ) }{\partial x_{j}^{'}\left ( t^{'} \right
+)}v_{j}^{'}dt^{'}=v_{i}dt$$
+so for example:
+$$v_{j}^{'}=v_{i}\frac{dt}{dt^{'}}\frac{\partial x_{j}^{'}\left ( t^{'} \right )
+}{\partial x_{i}\left ( t \right )}\\
+v_{x}^{'}=\frac{dt}{dt^{'}}\left (
+v_{x}\frac{\partial x^{'}}{\partial x} +
+v_{t}\frac{\partial x^{'}}{\partial t} \right )\\
+=\frac{dt}{\gamma \left ( dt-\frac{v}{c^{2}}dx \right )}\left (
+v_{x}\gamma - vv_{t}\gamma \right )\\
+=\frac{\left (
+v_{x} - vv_{t} \right )}{ \left ( 1-\frac{v}{c^{2}}v_{x} \right )}=\frac{\left (
+v_{x} - v \right )}{ \left ( 1-\frac{v}{c^{2}}v_{x} \right )}$$
+<h2><font face="Segoe Script">4.1 Acceralation transform</font></h2>
+</body>
+</html>
