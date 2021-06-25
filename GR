@@ -21,6 +21,9 @@
 
 
 
+
+
+
     </script>
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -198,18 +201,18 @@ _{ii}$$
 so:
 $$B=A^{T};A=B^{T}$$
 then:
-$$F_{\mu \nu }^{'}=A_{\mu }^{'}\otimes \frac{\partial }{\partial x_{\nu }^{'}}- \frac{\partial }{\partial x_{\nu
-}^{'}}\otimes A_{\mu }^{'}\\
+$$F_{\mu \nu }^{'}=A_{\mu }^{'}\otimes \frac{\partial }{\partial x_{\nu }^{'}}-
+\frac{\partial }{\partial x_{\mu }^{'}}\otimes A_{\nu }^{'}\\
 =\frac{dt}{\gamma dt^{'}}\left [ \frac{\partial x_{\mu }^{'}}{\partial x_{k}}A_{k}\otimes \frac{\partial }{\partial x_{l
 }}\frac{\partial x_{l }}{\partial x_{\nu }^{'}}- \frac{\partial x_{k}}{\partial x_{\mu }^{'}}\frac{\partial }{\partial
 x_{k}}\otimes A_{l}\frac{\partial x_{\nu}^{'}}{\partial x_{l}}\right ]\\
 =\frac{dt}{\gamma dt^{'}}\frac{\partial x_{\mu }^{'}}{\partial x_{k}}\left ( A_{k}\otimes \frac{\partial }{\partial x_{l
 }}- \frac{\partial }{\partial x_{k}}\otimes A_{l}\right )\frac{\partial x_{l }}{\partial x_{\nu }^{'}}$$
 when:
-$$v_{x}=v(viewer\ in\ moving\ point\)$$
+$$v_{x}=v(viewer\ in\ moving\ point)$$
 then:
 $$\frac{dt}{\gamma dt^{'}}=1$$
-<h1><font face="Segoe Script">4 Acceralation</font></h1>
+<h1><font face="Segoe Script">4 Acceralation Transform</font></h1>
 
 <h2><font face="Segoe Script">4.1 Velocity transform</font></h2>
 $$\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial t^{'}}dt^{'}=\frac{\partial \overrightarrow{R}\left ( t
@@ -233,5 +236,56 @@ v_{x}\gamma - vv_{t}\gamma \right )\\
 v_{x} - vv_{t} \right )}{ \left ( 1-\frac{v}{c^{2}}v_{x} \right )}=\frac{\left (
 v_{x} - v \right )}{ \left ( 1-\frac{v}{c^{2}}v_{x} \right )}$$
 <h2><font face="Segoe Script">4.1 Acceralation transform</font></h2>
+by:
+$$\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial t^{'}}dt^{'}=
+\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial t}dt\\
+\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial t^{'}\partial t^{'}}dt^{'}dt^{'}=
+\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial t\partial t}dtdt$$
+then:
+$$\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x^{'}_{i}\left ( t^{'} \right )}\frac{\partial
+x^{'}_{i}\left ( t^{'} \right ) }{\partial t^{'}\partial t^{'}}dt^{'}dt^{'}=
+\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{j}\left ( t \right )}\frac{\partial x_{j}\left ( t
+\right ) }{\partial t\partial t}dtdt\\
+\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{j}\left ( t^{'} \right )}
+\frac{\partial x_{j}\left ( t^{'} \right ) }{\partial x^{'}_{i}\left ( t^{'} \right )}
+\frac{\partial x^{'}_{i}\left ( t^{'} \right ) }{\partial t^{'}\partial t^{'}}dt^{'}dt^{'}=
+\frac{\partial \overrightarrow{R}\left ( t \right ) }{\partial x_{j}\left ( t \right )}\frac{\partial x_{j}\left ( t
+\right ) }{\partial t\partial t}dtdt\\\frac{\partial x_{j}\left ( t^{'} \right ) }{\partial x^{'}_{i}\left ( t^{'}
+\right )}
+\frac{\partial x^{'}_{i}\left ( t^{'} \right ) }{\partial t^{'}\partial t^{'}}dt^{'}dt^{'}=
+\frac{\partial x_{j}\left ( t \right ) }{\partial t\partial t}dtdt\\
+\frac{\partial x^{'}_{i}\left ( t^{'} \right ) }{\partial t^{'}\partial t^{'}}=
+\frac{\partial x_{j}\left ( t \right ) }{\partial t\partial t}\frac{dtdt}{dt^{'}dt^{'}}
+\frac{\partial x^{'}_{i}\left ( t^{'} \right ) }{\partial x_{j}\left ( t^{'} \right )}\\
+a^{'}_{i}=a_{j}
+\frac{dtdt}{dt^{'}dt^{'}}
+\frac{\partial x^{'}_{i}\left ( t^{'} \right ) }{\partial x_{j}\left ( t^{'} \right )}$$
+so:
+$$a^{'}_{i}=a_{j}
+\frac{dtdt}{dt^{'}dt^{'}}
+\frac{\partial x^{'}_{i}\left ( t^{'} \right ) }{\partial x_{j}\left ( t^{'} \right )}\\
+a^{'}_{x}= \frac{dtdt}{dt^{'}dt^{'}}
+\left ( a_{x} \frac{\partial x^{'} }{\partial x} + a_{t} \frac{\partial x^{'}}{\partial t} \right)
+=\frac{dtdt}{dt^{'}dt^{'}}a_{x} \gamma \\
+a^{'}_{y}= \frac{dtdt}{dt^{'}dt^{'}} \left ( a_{y} \frac{\partial y^{'} }{\partial y}
+\right)=\frac{dtdt}{dt^{'}dt^{'}}a_{y} $$
+when:
+$$find\ a\ frame\ that\ this\ frame\ velocity\ v=v_{x}\left ( t \right ) at\ moment\ t\ ,so\ at\ any\ time\ can\ find\ a\
+new\ \gamma to\ link\ a^{'} and\ a:\\
+\frac{dtdt}{dt^{'}dt^{'}}=\gamma ^{2},so\ a_{x}^{'}=\gamma ^{3}a_{x},a_{y}^{'}=\gamma ^{2}a_{y}...$$
+
+<h1><font face="Segoe Script">5 Potential Energy in E field</font></h1>
+
+<h2><font face="Segoe Script">5.1 E transform</font></h2>
+since:
+$$F_{14}^{'}=\frac{E_{x}^{'}}{ic}=\frac{\partial x_{1}^{'}}{\partial x_{k}}F_{kl}\frac{\partial x_{l}}{\partial x_{4}^{'}}\\
+=\frac{\partial x_{1}^{'}}{\partial x_{1}}F_{14}\frac{\partial x_{4}}{\partial x_{4}^{'}}+\frac{\partial x_{1}^{'}}{\partial x_{4}}F_{41}\frac{\partial x_{1}}{\partial x_{4}^{'}}\\
+=\frac{\partial x^{'}}{\partial x}\frac{E_{x}}{ic}\frac{\partial ict}{\partial ict^{'}}+\frac{\partial x^{'}}{\partial ict}\frac{-E_{x}}{ic}\frac{\partial x}{\partial ict^{'}}\\
+=\gamma \frac{E_{x}}{ic}\gamma +\frac{-v\gamma }{ic}\frac{-E_{x}}{ic}\frac{v\gamma }{ic}\\
+=\left (\gamma ^{2} +\frac{-v\gamma }{c}\frac{v\gamma }{c}  \right )\frac{E_{x}}{ic}\\
+=\frac{E_{x}}{ic}
+$$
+and set:
+
 </body>
 </html>
