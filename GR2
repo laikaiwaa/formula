@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+
+
+
+
+
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+<body>
+<h1><font face="Segoe Script">Riemamn Curvature Tensor</font></h1>
+
+$$R_{\left ( \overrightarrow{u},\overrightarrow{v} \right )}\overrightarrow{W}=\bigtriangledown
+_{\overrightarrow{u}}\bigtriangledown _{\overrightarrow{v}}\overrightarrow{W}-\bigtriangledown
+_{\overrightarrow{v}}\bigtriangledown _{\overrightarrow{u}}\overrightarrow{W}\\
+=u_{i}v_{j}w_{k}R_{\left ( \overrightarrow{e_{i}}\overrightarrow{e_{j}} \right )}\overrightarrow{e_{k}}\\
+R_{\left ( \overrightarrow{e_{i}}\overrightarrow{e_{j}} \right )}\overrightarrow{e_{k}}=\bigtriangledown
+_{i}\bigtriangledown _{j}\overrightarrow{e_{k}}-\bigtriangledown _{j}\bigtriangledown _{i}\overrightarrow{e_{k}}\\
+=\bigtriangledown _{i}\left (\Gamma _{kj}^{d}\overrightarrow{e_{d}} \right )-\bigtriangledown _{j}\left (\Gamma
+_{ki}^{d^{'}}\overrightarrow{e_{d^{'}}} \right )\\
+=\frac{\partial \Gamma _{kj}^{d}}{\partial i}\overrightarrow{e_{d}}+
+\Gamma _{kj}^{d}\Gamma _{di}^{m}\overrightarrow{e_{m}}-
+\frac{\partial \Gamma _{ki}^{d^{'}}}{\partial j}\overrightarrow{e_{d^{'}}}-
+\Gamma _{ki}^{d^{'}}\Gamma _{d^{'}j}^{m^{'}}\overrightarrow{e_{m^{'}}}\\
+=\left (\frac{\partial \Gamma _{kj}^{m}}{\partial i}-
+\frac{\partial \Gamma _{ki}^{m}}{\partial j}+
+\Gamma _{kj}^{d}\Gamma _{di}^{m}-
+\Gamma _{ki}^{d}\Gamma _{dj}^{m} \right )\overrightarrow{e_{m}}\\
+=R_{kij}^{m}\overrightarrow{e_{m}}
+$$
+
+
+<h1><font face="Segoe Script">From Gauss Curvature to Ricci Tensor</font></h1>
+
+<h2><font face="Segoe Script">Gauss Formula and Weingarton</font></h2>
+Gauss formula:
+$$\frac{\partial \overrightarrow{e_{i}}}{j}=\Gamma
+_{ij}^{k}\overrightarrow{e_{k}}+L_{ij}\overrightarrow{N};\overrightarrow{N}=\frac{\overrightarrow{e_{i}}\times
+\overrightarrow{e_{j}}}{\left | \overrightarrow{e_{i}}\times \overrightarrow{e_{j}} \right |}\\$$
+by Weingarton:
+$$\frac{\partial \overrightarrow{N}}{\partial i}=a_{i}^{j}\overrightarrow{e_{j}}\\
+\frac{\partial \left ( \overrightarrow{N}\cdot \overrightarrow{e_{i}} \right )}{\partial j}=0=\frac{\partial
+\overrightarrow{N}}{\partial j}\cdot \overrightarrow{e_{i}}+\overrightarrow{N}\cdot \frac{\partial
+\overrightarrow{e_{i}}}{\partial j}\\
+L_{ij}=-\frac{\partial \overrightarrow{N}}{\partial j}\cdot \overrightarrow{e_{i}}=\overrightarrow{N}\cdot
+\frac{\partial \overrightarrow{e_{i}}}{\partial j}$$
+So:
+$$-L_{i}^{l}=-L_{ij}g^{jl}=\frac{\partial \overrightarrow{N}}{\partial j}\cdot \overrightarrow{e_{i}}\cdot
+\overrightarrow{e^{j}}\cdot \overrightarrow{e^{l}}=\frac{\partial \overrightarrow{N}}{\partial j}\cdot \delta
+_{i}^{j}\cdot \overrightarrow{e^{l}}\\
+=\frac{\partial \overrightarrow{N}}{\partial i}\cdot \overrightarrow{e^{l}}=a_{i}^{j}\overrightarrow{e_{j}}\cdot
+\overrightarrow{e^{l}}=\overrightarrow{e^{l}}=a_{i}^{l}$$
+<h2><font face="Segoe Script">Gauss curvature</font></h2>
+$$k_{n}=\frac{\partial ^{2} \overrightarrow{r}}{\partial ^{2}S}\cdot \overrightarrow{n}=
+\left (
+\frac{\partial \left (\frac{\partial \overrightarrow{r}}{\partial x_{i}} \right )}{\partial S}\frac{\partial
+x_{i}}{\partial S} +
+\frac{\partial \overrightarrow{r}}{\partial x_{i}} \frac{\partial \left (\frac{\partial x_{i}}{\partial S} \right )
+}{\partial S}\right )\cdot \overrightarrow{n}\\
+=\left (
+\frac{\partial \overrightarrow{e_{i}}}{\partial S}\frac{\partial x_{i}}{\partial S} +
+\overrightarrow{e_{i}}\frac{\partial \left (\frac{\partial x_{i}}{\partial S} \right ) }{\partial S}\right )\cdot
+\overrightarrow{n}\\
+=\frac{\partial \overrightarrow{e_{i}}}{\partial x_{j}}\frac{\partial x_{j}}{\partial S}\frac{\partial x_{i}}{\partial
+S}\cdot \overrightarrow{n}\\
+by:\\
+dx_{i}dx_{j}=\frac{\partial x_{i}}{\partial S}dS\frac{\partial x_{i}}{\partial S}dS\\
+k_{n}=\frac{L_{ij}dx_{i}dx_{j}}{g_{ij}dx_{i}dx_{j}}\\
+so:\\
+k_{n}g_{ij}=L_{ij}\\
+then:\\
+k_{n}g_{ij}g^{jk}=b_{ij}g^{jk}\\
+k_{n}\delta _{i}^{k}=b_{i}^{k}\\
+k_{n}=eigenvalue\ of\ b_{i}^{k}\\
+K=k_{1}k_{2}...
+K=\frac{1}{2}\varepsilon _{ik}\varepsilon _{jl}b_{i}^{j}b_{k}^{l}=\left | b_{i}^{k} \right |\left ( i\neq k;j\neq l \right )$$
+</body>
+</html>
