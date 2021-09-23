@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+
+
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+<body>
+<h1><font face="DFKai-SB">氧氧化還原反應</font></h1>
+<pre><p><font face="DFKai-SB">還原反應</font><font face="Segoe Script">（Reduction）</font></p></pre>
+$$The\ energy\ level\ of\ electrons\ in\ electrode\ high\ enough\ to\ transfer\ into\ vacant\ electronic\ states\ on\ species\ in\ then\ electrolyte$$
+$$A+e\rightarrow A^{-}$$
+<pre><p><font face="DFKai-SB">氧化反應</font><font face="Segoe Script">（Oxidation）</font></p></pre>
+$$The\ energy\ level\ of\ electrons\ in\ electrode\ low\ enough\ to\ transfer\ from\ vacant\ electronic\ states\ on\ species\ in\ then\ electrolyte$$
+$$A-e\rightarrow A^{+}$$
+<pre><p><font face="DFKai-SB">反應速率</font><font face="Segoe Script">（Reaction Rate）</font></p></pre>
+$$v\left ( mol/s \right )=\frac{i}{nFA}\\
+F:Faradaic\ Constant\\
+n:Stoichiometric\ Number$$
+<h1><font face="Segoe Script">Butler-Volmer Model of Electrode Kinetics</font></h1>
+<pre><p><font face="DFKai-SB">反應速率</font></p></pre>
+$$A\rightleftharpoons B\\
+k:rate\ constant\\
+C:concentration\\
+v_{f}=k_{f}C_{A}\\
+v_{b}=k_{b}C_{B}\\
+v=k_{f}C_{A}-k_{b}C_{B}\\
+i=i_{f}-i_{b}=nFA\left (k_{f}C_{A}-k_{b}C_{B}  \right )$$
+<pre><p><font face="DFKai-SB">交換速率</font><font face="Segoe Script">（exchange velocity）</font></p></pre>
+$$at\ equilibrium:\\
+\frac{k_{f}}{k_{b}}=K=\frac{C_{B}}{C_{A}}\\
+v_{0}=k_{f}\left ( C_{A} \right )_{eq}=k_{b}\left ( C_{B} \right )_{eq}\\
+$$
+
+
+<pre><p></font><font face="Segoe Script">Arrhenius Equation</font></p></pre>
+$$E_{A}:activation\ energy\\
+A:frequency factor\\
+\Delta E^{\ddagger }:standard\ internal\ energy\ of\ activation\\
+\Delta H^{\ddagger }:standard\ enthalpy\ of\ activation\\
+\Delta S^{\ddagger }:standard\ entropy\ of\ activation\\
+\Delta G^{\ddagger }:standard\ free\ energy\ of\ activation\\
+k=Ae^{\frac{-E_{A}}{RT}}\approx Ae^{\frac{-\Delta H^{\ddagger }}{RT}}=A^{'}e^{\frac{-\Delta G^{\ddagger }}{RT}}$$
+
+<pre><p><font face="Segoe Script">Effects of a potential change</font></p></pre>
+$$\alpha :transfer\ coefficient\\
+F:Faradaic\ Constant\\
+E^{0}:The\ formal\ potential\\
+by\ \Delta G=-nFE :\\
+\Delta G_{a}^{\ddagger }=\Delta G_{oa}^{\ddagger }-\left ( 1-\alpha  \right )F\left ( E-E^{0} \right )\\
+\Delta G_{c}^{\ddagger }=\Delta G_{oc}^{\ddagger }+\alpha F\left ( E-E^{0} \right )\\
+by\ Arrhenius\ Equation:\\
+k_{f}=A_{f}e^{-\frac{\Delta G_{c}^{\ddagger }}{RT}}\\
+k_{b}=A_{b}e^{-\frac{\Delta G_{a}^{\ddagger }}{RT}}\\
+by\ f=\frac{F}{RT} \\
+so:\\
+k_{f}=A_{f}e^{-\frac{\Delta G_{oc}^{\ddagger }}{RT}}e^{\left [-\alpha f\left ( E-E^{0} \right )  \right ]}\\
+k_{b}=A_{b}e^{-\frac{\Delta G_{oa}^{\ddagger }}{RT}}e^{\left [\left ( 1-\alpha  \right )f\left ( E-E^{0} \right )  \right ]}\\
+by\ equilibrium:\ \\
+E_{eq}=E^{0}\\
+C_{O}^{*},C_{R}^{*}:bulk\ concentrations\\
+k_{f}C_{O}^{*}=k_{b}C_{R}^{*}\\
+k^{0}=A_{f}e^{-\frac{\Delta G_{oc}^{\ddagger }}{RT}}=A_{b}e^{-\frac{\Delta G_{oa}^{\ddagger }}{RT}}\\
+i=nFAk^{0}\left [ C_{O}\left ( 0,t \right ) e^{-\alpha f\left ( E-E^{0} \right )}-C_{R}\left ( 0,t \right ) e^{\left (1-\alpha  \right ) f\left ( E-E^{0} \right )}\right ]
+$$
+<h1><font face="Segoe Script">Application of B-V Equation</font></h1>
+<pre><p><font face="Segoe Script">Nernst Equation</font></p></pre>
+$$when\ i=0\\
+e^{f\left ( E_{eq}-E^{0} \right )}=\frac{C_{O}^{*}}{C_{R}^{*}}\\
+E_{eq}=E^{0}+\frac{RT}{F}ln\left ( \frac{C_{O}^{*}}{C_{R}^{*}} \right )\\
+$$
+<pre><p><font face="Segoe Script">Current-Overpotential Equation</font></p></pre>
+$$i_{0}=i_{c}=i_{a}=nFAk^{0}C_{O}^{*}e^{-\alpha f\left ( E_{eq}-E^{0} \right )}=nFAk^{0}C_{O}^{\left ( 1-\alpha  \right )*}C_{R}^{*\alpha }\\
+\frac{i}{i_{0}}=
+\left [ \frac{C_{O}\left ( 0,t \right ) e^{-\alpha f\left ( E-E^{0} \right )}}{C_{O}^{\left ( 1-\alpha  \right )*}C_{R}^{*\alpha }}-\frac{C_{R}\left ( 0,t \right ) e^{\left (1-\alpha  \right ) f\left ( E-E^{0} \right )}}{C_{O}^{\left ( 1-\alpha  \right )*}C_{R}^{*\alpha }}\right ]\\
+=\left [
+\frac{C_{O}\left ( 0,t \right ) e^{-\alpha f\left ( E-E^{0} \right )}}{C_{O}^{*}}
+\frac{C_{O}^{\alpha *}}{C_{R}^{*\alpha }}-
+\frac{C_{R}\left ( 0,t \right ) e^{\left (1-\alpha  \right ) f\left ( E-E^{0} \right )}}{C_{R}^{*}}
+\frac{C_{O}^{\left (\alpha -1  \right ) *}}{C_{R}^{*\left (\alpha -1 \right ) }}\right ]\\
+=\left [
+\frac{C_{O}\left ( 0,t \right ) e^{-\alpha f\left ( E-E^{0} \right )}}{C_{O}^{*}}e^{\alpha f\left ( E_{eq}-E^{0} \right )}-
+\frac{C_{R}\left ( 0,t \right ) e^{\left (1-\alpha  \right ) f\left ( E-E^{0} \right )}}{C_{R}^{*}}e^{\left (\alpha  - 1\right ) f\left ( E_{eq}-E^{0} \right )}\right ]\\
+=\left [
+\frac{C_{O}\left ( 0,t \right ) }{C_{O}^{*}}e^{-\alpha f\left ( E-E_{eq} \right )}-
+\frac{C_{R}\left ( 0,t \right ) }{C_{O}^{*}}e^{\left (1-\alpha  \right ) f\left ( E-E_{eq} \right )}\right ]\\
+$$
+<pre><p><font face="Segoe Script">Tafel Equation</font></p></pre>
+$$when\ \frac{C_{O}\left ( 0,t \right ) }{C_{O}^{*}},\frac{C_{R}\left ( 0,t \right ) }{C_{O}^{*}}=0.9~1.1\\
+\frac{i}{i_{0}}=\left [
+\frac{C_{O}\left ( 0,t \right ) }{C_{O}^{*}}e^{-\alpha f\left ( E-E_{eq} \right )}-
+\frac{C_{R}\left ( 0,t \right ) }{C_{O}^{*}}e^{\left (1-\alpha  \right ) f\left ( E-E^{eq} \right )}\right ]\\
+=\left [e^{-\alpha f\left ( E-E_{eq} \right )}-e^{\left (1-\alpha  \right ) f\left ( E-E^{eq} \right )}\right ]\\
+by\ e^{x}\approx 1+x,when\ small\ x:\\
+\frac{i}{i_{0}}=\left [1-\alpha f\left ( E-E_{eq} \right )-1-\left (1-\alpha  \right ) f\left ( E-E^{eq} \right )\right ]\\
+=-f\left ( E-E^{eq} \right )\\
+when\ big\ x:\\
+e^{-\alpha f\left ( E-E_{eq} \right )}\gg e^{\left (1-\alpha  \right ) f\left ( E-E^{eq} \right )}\\
+\frac{i}{i_{0}}=e^{-\alpha f\left ( E-E_{eq} \right )}\\
+\eta =E-E_{eq}=\frac{RT}{\alpha F}ln \left (i_{0}  \right )-\frac{RT}{\alpha F}ln \left (i  \right )
+$$
+<pre><p><font face="Segoe Script">the charge-transfer resistance</font></p></pre>
+$$R_{ct}=-\frac{E-E_{eq}}{i}=\frac{RT}{Fi_{0}}$$
+<h1><font face="Segoe Script">Nernst-Planck equation</font></h1>
+$$J_{i}\left ( x \right ):the\ flux\ of\ species\ i\left ( mol\ s^{-1}cm^{-2} \right )\\
+D_{i}:the\ diffusion\ coefficient\ \left ( cm^{2}/s \right )\\
+\phi \left ( x \right ):potential\\
+z_{i}:charge\ of\ species\ i\\
+C_{i}:concentration\ of\ species\ i\\
+$$
+</body>
+</html>
