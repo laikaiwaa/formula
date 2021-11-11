@@ -3,17 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>B-V eq.</title>
-    <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>
-    <script type="text/javascript"
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
-    </script>
-    <script type="text/javascript" src="../MathJax-2.7.8/MathJax.js?config=TeX-AMS_SVG"></script>
-
 
 
 </head>
